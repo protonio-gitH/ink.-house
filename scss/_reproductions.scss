@@ -1,0 +1,181 @@
+.reproductions{
+    padding: 70px 0;
+    &-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    &-inner{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 30px 0;
+    }
+
+    h2{
+        color: #2C2D35;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%; /* 44px */
+    }
+
+    &-items{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        overflow: auto;
+    }
+
+    &-item{
+        padding: 10px 20px;
+        border-radius: 20px;
+        background: #D4E8D9;
+        color: #2C2D35;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+    }
+
+    &-card{
+        display: inline-block;
+        padding: 20px 20px 30px 20px;
+        background: #E1EDE6;
+        
+
+        img{
+            margin:0 0 20px 0;
+            max-width: 100%;
+            
+            
+        }
+
+        p{
+            margin:0 0 10px 0;
+            color: #86928B;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            
+        }
+
+        h3{
+            margin:0 0 8px 0;
+            color: #2C2D35;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &__description{
+            margin:0 0 30px 0;
+            color: #2C2D35;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &__price{
+            margin: 0 0 20px 0 ;
+            color: #598D66;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &__basket{
+            padding: 20px 60px;
+            color: #598D66;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: 1px solid #598D66;
+            text-align: center;
+        }
+    }
+    
+}
+
+@media (max-width:1100px){
+    .reproductions{
+        h2{
+            font-size: 30px;
+        }
+
+        &-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            
+        }
+    }
+}
+
+@media (max-width:690px){
+    .reproductions{
+        h2{
+            font-size: 24px;
+        }
+
+        &-item{
+            font-size: 18px;
+        }
+        &-inner{
+            flex-direction: column;
+            gap: 20px 0;
+        }
+
+        &-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            
+        }
+
+        &-card{
+            p{
+                font-size: 16px;
+            }
+
+            h3{
+                font-size: 24px;
+            }
+
+            &__description{
+                font-size: 16px;
+            }
+
+            &__price{
+                font-size: 20px;
+            }
+
+            &__basekt{
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width:551px){
+    .reproductions{
+        &-items{
+            gap: 20px;
+        }
+
+        &-cards{
+            display: grid;
+            grid-template-columns: 1fr;
+            
+        }
+
+        
+    }
+}
+
